@@ -10,11 +10,12 @@
 
 ### EER Schema
 
-
+![Screen Shot 2017-05-16 at 21.42.41](http://i.imgur.com/4Vt3Jtt.png)
 
 
 ### Database Schema
 
+![Screen Shot 2017-05-16 at 21.43.40](http://i.imgur.com/B2R8Bsw.png)
 
 	
 
