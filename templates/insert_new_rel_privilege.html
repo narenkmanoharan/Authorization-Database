@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Relation Privilege</title>
+</head>
+<body>
+
+    <h2>New Relation Privilege</h2>
+
+    <form action="display_rel_privilege" method="POST">
+
+        <table>
+            <tr>
+                <td>
+                    Enter Relation Privilege Name:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="rel_privilege_id">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Update Row Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="update_row">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Delete Row Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="delete_row">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Insert Row Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="insert_row">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Select Table Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="select_table">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Reference Table Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="reference_table">
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+        <input type="submit">
+
+    </form>
+
+    <br>
+
+
+    <form action="/index" method="POST">
+        <input id="refresh" type="submit" value="Return to Index">
+    </form>
+
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Table</title>
+</head>
+<body>
+
+    <h2>New Table</h2>
+
+    <form action="display_table" method="POST">
+
+        <table>
+            <tr>
+                <td>
+                    Enter Table Name:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="table_name">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Owner ID:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="owner_id">
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+        <input type="submit">
+
+    </form>
+
+    <br>
+
+
+    <form action="/index" method="POST">
+        <input id="refresh" type="submit" value="Return to Index">
+    </form>
+
+</body>
+</html>

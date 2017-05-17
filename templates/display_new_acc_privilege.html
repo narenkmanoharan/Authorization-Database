@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Account Privilege</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+</head>
+
+<body>
+
+    <table id="table_db">
+        <tr>
+            <th>
+                Acc_privilege_id
+            </th>
+            <th>
+                Create_table
+            </th>
+            <th>
+                Create_schema
+            </th>
+            <th>
+                Create_view
+            </th>
+            <th>
+                Add_column
+            </th>
+            <th>
+                Remove_column
+            </th>
+            <th>
+                Drop_table
+            </th>
+            <th>
+                Drop_view
+            </th>
+            <th>
+                Rename_column
+            </th>
+            <th>
+                Rename_table
+            </th>
+        </tr>
+        <tr>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in acc_privilege_id %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in create_table %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in create_schema %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in create_view %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in add_column %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in remove_column %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in drop_table %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in drop_view %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in rename_column %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in rename_table %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <form action="/index" method="POST">
+        <input id="refresh" type="submit" value="Return to Index">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New User Account</title>
+</head>
+<body>
+
+    <h2>New User Account</h2>
+
+    <form action="display_user" method="POST">
+
+        <table>
+            <tr>
+                <td>
+                    Enter User ID:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="user_id">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Username:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="user_name">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Phone:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="phone">
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+        <input type="submit">
+
+    </form>
+
+    <br>
+
+
+    <form action="/index" method="POST">
+        <input id="refresh" type="submit" value="Return to Index">
+    </form>
+
+</body>
+</html>

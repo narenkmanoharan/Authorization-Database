@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Table</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+</head>
+
+<body>
+
+    <table id="table_db">
+        <tr>
+            <th>
+                Table_name
+            </th>
+            <th>
+                Owner_id
+            </th>
+        </tr>
+        <tr>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in table_name %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in owner_id %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <form action="/index" method="POST">
+        <input id="refresh" type="submit" value="Return to Index">
+    </form>
+
+</body>
+</html>

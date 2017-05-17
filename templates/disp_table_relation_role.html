@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Relation Privilege of User Role</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+</head>
+
+<body>
+
+    <table id="table_db">
+        <tr>
+            <th>
+                Map_rel_privilege_id
+            </th>
+            <th>
+                Map_table_name
+            </th>
+            <th>
+                Update_row
+            </th>
+            <th>
+                Delete_row
+            </th>
+            <th>
+                Insert_row
+            </th>
+            <th>
+                Select_table
+            </th>
+            <th>
+                Reference_table
+            </th>
+        </tr>
+        <tr>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in map_rel_privilege_id %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in map_table_name %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in update_row %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in delete_row %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in insert_row %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in select_table %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td style="width: 250px; vertical-align:top">
+                <ul style="list-style-type: none">
+                    {% for data in reference_table %}
+                    <li>{{data}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <form action="/index" method="POST">
+        <input id="refresh" type="submit" value="Return to Index">
+    </form>
+
+</body>
+</html>

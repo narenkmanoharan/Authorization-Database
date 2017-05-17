@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Relation Privilege of User Account</title>
+</head>
+<body>
+
+    <h1>Display Relation Privilege of User Account</h1>
+
+    <form action="disp_rel_privilege_user_acc" method="POST">
+
+        <table>
+            <tr>
+                <td>
+                    Enter User ID:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="user_id">
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+        <input type="submit">
+    </form>
+
+    <br>
+
+    <form action="/index" method="POST">
+        <input id="refresh" type="submit" value="Return to Index">
+    </form>
+
+
+</body>
+</html>

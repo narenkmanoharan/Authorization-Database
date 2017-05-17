@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Relation privilege of User Account</title>
+</head>
+<body>
+
+    <h2>Check Relation privilege of User Account</h2>
+
+    <form action="check_rel_pri_user_account" method="POST">
+
+        <table>
+            <tr>
+                <td>
+                    Enter Privilege Name:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="pri_name">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter User ID:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="user_id">
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+        <input type="submit">
+
+    </form>
+
+    <br>
+
+    <form action="/index" method="POST">
+        <input id="refresh" type="submit" value="Return to Index">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auth DB</title>
+</head>
+<body>
+
+    <div class="plate">
+
+    <h1>Authorization Database</p>
+
+    <h3>Please select the operation to be executed</h3>
+
+    <form action="values" method='POST'>
+        <label> Query:
+            <select name="operations">
+                <option value="1">Insert New User Record</option>
+                <option value="2">Insert New User Role</option>
+                <option value="3">Insert New User Table</option>
+                <option value="4">Insert New Account Privilege</option>
+                <option value="5">Insert New Relation Privilege</option>
+                <option value="6">Relate User Role to User Account</option>
+                <option value="7">Relate Account Privilege to User Role</option>
+                <option value="8">Relate Relation Privilege, User Role and Table</option>
+                <option value="9">Display Account Privilege of User Role</option>
+                <option value="10">Display Relation Privilege of User Role</option>
+                <option value="11">Display Account privilege of User Account</option>
+                <option value="12">Display Relation Privilege of User Account</option>
+                <option value="13">Check Account privilege of User Account</option>
+                <option value="14">Check Relation privilege of User Account</option>
+            </select>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+
+    <h3>Please select the table to be displayed</h3>
+
+    <form action="tables" method='POST'>
+        <label> Table:
+            <select name="tables">
+                <option value="1">User Account</option>
+                <option value="2">User Role</option>
+                <option value="3">User Table</option>
+                <option value="4">Account Privilege</option>
+                <option value="5">Relation Privilege</option>
+                <option value="6">Maps</option>
+            </select>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+
+    </div>
+
+</body>
+</html>

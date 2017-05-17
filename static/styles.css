@@ -1,0 +1,20 @@
+#table_db {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#table_db td, #table_db th {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#table_db tr:nth-child(even){background-color: #f2f2f2;}
+
+#table_db th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+}

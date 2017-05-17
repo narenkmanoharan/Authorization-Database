@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Account Privilege</title>
+</head>
+<body>
+
+    <h2>New Account Privilege</h2>
+
+    <form action="display_acc_privilege" method="POST">
+
+        <table>
+            <tr>
+                <td>
+                    Enter Account Privilege Name:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="acc_privilege_id">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Create Table Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="create_table">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Create Schema Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="create_schema">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Create View Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="create_view">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Add Column Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="add_column">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Remove Column Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="remove_column">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Drop Table Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="drop_table">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Drop View Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="drop_view">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rename Column Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="rename_column">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rename Table Permission:
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="rename_table">
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+        <input type="submit">
+
+    </form>
+
+    <br>
+
+
+    <form action="/index" method="POST">
+        <input id="refresh" type="submit" value="Return to Index">
+    </form>
+
+</body>
+</html>
